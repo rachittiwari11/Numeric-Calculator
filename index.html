@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+
+    <div class="cont">
+        <h2>Simple Calculator</h2>
+
+        <div class="one">Enter First Number</div>
+        <input type="text" name="" id="n1" class="first">
+
+        <br>
+        <br>
+        <br>
+        <div class="two">Enter Second Number</div>
+        <input type="text" name="" id="n2" class="second">
+        <br>
+        <br>
+        <br>
+
+        
+        
+        <p class="slt">Select Operation</p>
+        
+        <select class="opt" id ="op">
+           <option value="0">Select Operation:</option>
+           <option value="1">Addition</option>
+           <option value="2">Substraction</option>
+           <option value="3">Divide</option>
+           <option value="4">Multiple</option>
+         </select>
+         <br>
+         <br>
+        <button class="btn" id="bt" onclick="calculate()">CLick Me</button>
+        <br>
+        <br>
+
+        <p  class ="res" id="res">Your Result Here</p>
+    </div>
+    <script>
+    
+    function calculate(){
+        var n1 = document.getElementById('n1').value;
+        var n2= document.getElementById('n2').value;
+        n1 = parseInt(n1);
+        n2 = parseInt(n2); 
+        // console.log(n1)
+        var oper=document.getElementById('op').value;
+        console.log(1)
+        if(oper==1){
+            var ans = n1+n2;
+            console.log(ans);
+            document.getElementById('res').innerHTML= n1  +" "+"+"+" " + n2 +"=" +ans;
+        }
+
+        if(oper==2){
+            var ans = n1-n2;
+            console.log(ans);
+            document.getElementById('res').innerHTML= n1  +" "+"-"+" " + n2 +"=" +ans;
+        }
+
+        if(oper==3){
+            var ans = n1/n2;
+            console.log(ans);
+            document.getElementById('res').innerHTML= n1  +" "+"/"+" " + n2 +"="+" " +ans;
+        }
+        if(oper==4){
+            var ans = n1*n2;
+            console.log(ans);
+            document.getElementById('res').innerHTML= n1  +" "+"*"+" " + n2 +"="+" " +ans;
+        }
+
+    }
+
+</script>
+
+
+</body>
+</html>

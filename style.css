@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right,#de6161, #2657eb);
+}
+.cont{
+    background-color: rgb(185, 185, 139);
+    min-height: 27rem;
+    width: 38rem;
+     align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    border-radius: 5%;
+    -webkit-box-shadow: -3px 2px 27px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 2px 27px 7px rgba(0,0,0,0.75);
+    box-shadow: -3px 2px 27px 7px rgba(0,0,0,0.75);
+}
+
+h2{
+    text-align: center;
+    padding-bottom: 6%;
+}
+
+.one,.two{
+    flex-wrap: wrap;
+   margin-right: 59%;
+}
+.first,.second{
+    height: 34px;
+    width: 85%;
+}
+
+.btn{
+    height: 3rem;
+    width: 14rem;
+    background-color: rgb(132, 230, 132);
+}
+.slt{
+    height:34px;
+    flex-wrap:wrap;
+    margin-right:64%;
+}
+.opt{
+height: 32px;
+width: 84%;
+margin-top: -14px;
+}
+.res{
+    
+    font-size:20px;
+}
+@media only screen and (max-width: 638px) {
+    .cont{
+        background-color: rgb(185, 185, 139);
+        min-height: 20rem;
+        width: 30rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 5%;
+        border-radius: 5%;
+    }
+  }
+
+  @media only screen and (max-width: 504px) {
+    .cont{
+        background-color: rgb(185, 185, 139);
+        min-height: 15rem;
+        width: 20rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 5%;
+        border-radius: 5%;
+    }
+
+    .one,.two{
+        flex-wrap: wrap;
+       margin-right: 40%;
+    }
+  }
+  @media only screen and (max-width: 504px ) {
+    
+    .slt{
+        height:34px;
+        flex-wrap:wrap;
+        margin-right:162%;
+    } 
+    .one,.two{
+        flex-wrap: wrap;
+       margin-right: 43%;
+    }
+  }
+  @media only screen and (max-width: 360px ) {
+    
+    .slt{
+        height:34px;
+        flex-wrap:wrap;
+        margin-right:50%;
+    }
+    .one,.two{
+        flex-wrap: wrap;
+       margin-right: 42%;
+    } 
+  }
+
+  @media only screen and (max-width: 632px ) {
+    
+    .slt{
+        height:34px;
+        flex-wrap:wrap;
+        width:182px;
+    } 
+    .one,.two{
+        flex-wrap: wrap;
+       margin-right: 57%;
+    }
+  }
+ 
